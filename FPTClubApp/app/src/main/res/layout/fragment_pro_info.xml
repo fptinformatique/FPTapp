@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ProInfo">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/andika"
+        android:text="établissement :"
+        android:textAlignment="center"
+        android:textColor="#041686"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="201dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/orangecorneredfieldtext"
+        app:layout_constraintStart_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
+
+        <Spinner
+            android:id="@+id/spinnerlelve"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/orange" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/andika"
+        android:text="Niveau : "
+        android:textColor="#041686"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="201dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/orangecorneredfieldtext"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Spinner
+            android:id="@+id/spinneretab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="#FF5722" />
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/lstcerts"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnaddcert" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="326dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/andika"
+        android:text="Diplomes et Certifications :"
+        android:textColor="#041686"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <EditText
+        android:id="@+id/txtdipcert"
+        android:layout_width="201dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/loginfieldshapes"
+        android:ems="10"
+        android:fontFamily="@font/andika"
+        android:hint="Diplome/Certification..."
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#3F51B5"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnaddcert"
+        android:layout_width="44dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:scaleType="center"
+        android:src="@drawable/add"
+        app:backgroundTint="#2196F3"
+        app:fabSize="mini"
+        app:layout_constraintStart_toEndOf="@+id/txtdipcert"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="382dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Swipe Right and  Left to switch slides "
+        android:textAlignment="center"
+        android:textColor="#009688"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lstcerts" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

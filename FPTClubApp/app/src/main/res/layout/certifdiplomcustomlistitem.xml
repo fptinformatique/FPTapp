@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ECE49F">
+
+    <TextView
+        android:id="@+id/txtcertdip"
+        android:layout_width="288dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/caveat_brush"
+        android:text="aa"
+        android:textColor="#023A68"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btndeletecert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        app:backgroundTint="#FF5722"
+        app:fabSize="mini"
+        app:layout_constraintStart_toEndOf="@+id/txtcertdip"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/trash" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="#FF5722"
+        android:backgroundTint="#FF5722"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btndeletecert"
+        tools:layout_editor_absoluteX="1dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
